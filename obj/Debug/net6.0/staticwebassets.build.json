@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dryWL0ZRpTn+EWsNDQsImORYa92ySA3+gdIcVLTKSxE=",
+  "Source": "FlightTraficControl",
+  "BasePath": "_content/FlightTraficControl",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
