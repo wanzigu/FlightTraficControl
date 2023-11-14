@@ -144,7 +144,7 @@ namespace FlightTraficControl
 
         public async Task ReceivesFlightLanding(FlightInfo newFlightInfo)
         {
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:password@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _landing = dbClient.GetDatabase("Landing");
@@ -154,7 +154,7 @@ namespace FlightTraficControl
 
         public async Task ReceivesFlightDeparture(FlightInfo newFlightInfo)
         {
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:password@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _departure = dbClient.GetDatabase("Landing");
@@ -165,7 +165,7 @@ namespace FlightTraficControl
 
         public async Task<List<FlightInfo>> LatestFlightLandings()
         {
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:password@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _landing = dbClient.GetDatabase("Landing");
@@ -177,7 +177,7 @@ namespace FlightTraficControl
 
         public async Task<List<FlightInfo>> LatestFlightDepartures()
         {
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:password@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _departure = dbClient.GetDatabase("Departure");
@@ -189,7 +189,7 @@ namespace FlightTraficControl
 
         public async Task<List<FlightInfo>> AirborneFlights()
         {
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:password@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _airborne = dbClient.GetDatabase("Airborne");
@@ -201,7 +201,7 @@ namespace FlightTraficControl
 
         public async Task<List<FlightInfo>> StandbyFlights()
         {
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:password@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _standby = dbClient.GetDatabase("Standby");
@@ -228,7 +228,7 @@ namespace FlightTraficControl
             //    };
             //    controllerInstructions.Add(controllerInstruction);
             //}
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:password@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _historicalInstruction = dbClient.GetDatabase("HistoricalInstructions");
@@ -241,7 +241,7 @@ namespace FlightTraficControl
 
         public async Task<ControllerInstruction>? CurrentControllerInstruction()
         {
-            var connectionString = "mongodb+srv://wanziguelva:hcHxxK96TrHsLmnr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
+            var connectionString = "mongodb+srv://wanziguelva:passwordr@testing.rff3vvp.mongodb.net/?retryWrites=true&w=majority";
             MongoClient dbClient = new MongoClient(connectionString);
 
             var _airborne = dbClient.GetDatabase("Airborne");
